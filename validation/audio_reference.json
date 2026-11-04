@@ -1,0 +1,77 @@
+{
+  "status": "AUDIO_FIR_EXPERIMENT_COMPLETE",
+  "rows": [
+    {
+      "label": "background",
+      "digital_exact": true,
+      "valid": false,
+      "bearing": null,
+      "candidate": null,
+      "reasons": [
+        "fractional_direction_unstable"
+      ],
+      "grade": "REJECTED",
+      "metrics": null,
+      "rms": [
+        17068.725166205273,
+        15657.860201171157,
+        16009.857698180822,
+        16050.72138494263
+      ]
+    },
+    {
+      "label": "broadband_a",
+      "digital_exact": true,
+      "valid": true,
+      "bearing": 49.61339111983068,
+      "candidate": 49.61339111983068,
+      "reasons": [],
+      "grade": "FRACTIONAL_CONSENSUS_PASS",
+      "metrics": null,
+      "rms": [
+        9337.675882934216,
+        9780.75340635206,
+        10653.725424915152,
+        12429.358227580407
+      ]
+    },
+    {
+      "label": "broadband_b",
+      "digital_exact": true,
+      "valid": true,
+      "bearing": 49.59226756932293,
+      "candidate": 49.59226756932293,
+      "reasons": [],
+      "grade": "FRACTIONAL_CONSENSUS_PASS",
+      "metrics": null,
+      "rms": [
+        30116.513764310977,
+        30920.497339728576,
+        33125.096809323106,
+        34733.2927401753
+      ]
+    },
+    {
+      "label": "speech",
+      "digital_exact": true,
+      "valid": false,
+      "bearing": null,
+      "candidate": null,
+      "reasons": [
+        "fractional_direction_unstable"
+      ],
+      "grade": "REJECTED",
+      "metrics": null,
+      "rms": [
+        23467.22295062241,
+        24123.818900157145,
+        24749.58122281109,
+        29571.87281496555
+      ]
+    }
+  ],
+  "cleanup_verified": true,
+  "physical_accuracy": "NOT_VALIDATED",
+  "decision_origin": "BOARD_PL_FIR_CORRELATIONS_PEAKS_GUARD_PS_QUALITY_GEOMETRY",
+  "different_physical_sources": 1
+}

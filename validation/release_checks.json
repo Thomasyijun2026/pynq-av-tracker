@@ -1,0 +1,24 @@
+{
+  "status": "PASS_PUBLIC_RELEASE_REPRODUCTION",
+  "generated_pc": "2026-11-04T17:09:42.018717+08:00",
+  "scope": "OFFLINE_PACKAGE_AND_SOURCE_NO_BOARD_ACTIONS",
+  "baseline": "runtime13-bootstrap9-desktop12-abi5",
+  "runtime": {
+    "source": "logs/github_delivery_v1/reproduction_v1/logs/av_phase_runtime_V13/offline_20261104_170758/result.json",
+    "sha256": "95bbd77ab3a3ca6b7d7743ad3beeff2a7cb9c1e7c1dddade2d28fe7637026fa0",
+    "status": "PASS_PC_COMPLETE_RUNTIME_V13_LIFECYCLE",
+    "checks": 64
+  },
+  "integer_reference": {
+    "source": "logs/github_delivery_v1/reproduction_v1/logs/audio_filter_V7/rtl_vectors_20261104_170756/result.json",
+    "sha256": "177efd09c521b9ec58cdab6082d82d0a54cccc6aa7554e09974b6cc7935536ce",
+    "status": "OFFLINE_AUDIO_FILTER_RTL_V7_PASS",
+    "checks": 43
+  },
+  "hardware_opened": false,
+  "fpga_rebuilt": false,
+  "existing_programs_changed": false,
+  "board_configuration_generated": true,
+  "fresh_sd_installation": "NOT_RUN",
+  "new_physical_accuracy_test": "NOT_RUN"
+}

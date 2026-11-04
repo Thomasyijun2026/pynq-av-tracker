@@ -1,0 +1,3 @@
+# ABI5 subwindow diagnostics
+4 consecutive 8192-frame windows. Each bank: 198 signed64 correlation values then 4 energies, same FIR, centers, physical peaks and scalar definitions as ABI4. 808 immutable values exposed only when ready. Re-arm/reset/unfinished abort hide old data; finished cleanup preserves it. Original 202/6/24/guard ABI math is unchanged.
+0x40=0x444f4105; 0xa8=808 read-only; 0xac diagnostic index (low two byte strobes required; 0..807); 0xb0/0xb4 signed64 low/high. Invalid writes SLVERR and preserve index. Reads while not ready return zero. Input/FIR/physical peak/guard IDs unchanged. This is added evidence for fractional per-window direction assessment, not a claim of corrected physical accuracy.

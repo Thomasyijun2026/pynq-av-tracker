@@ -1,0 +1,19 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Tue Nov  3 20:37:08 2026
+| Host         : Thomascomputer running 64-bit major release  (build 9200)
+| Command      : report_cdc -file D:/pynq_av_localizer/build/av_pmod_V7/run_20261103_203039/reports/cdc.rpt
+| Design       : system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Physopt postRoute
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+Severity  Source Clock      Destination Clock  CDC Type                 Exceptions  Endpoints  Safe  Unsafe  Unknown  No ASYNC_REG  
+--------  ----------------  -----------------  -----------------------  ----------  ---------  ----  ------  -------  ------------  
+Info      input port clock  clk_fpga_0         No Common Primary Clock  False Path          6     6       0        0             0  
+Info      mic_bclk          clk_fpga_0         Safely Timed             None                4     4       0        0             0  
+

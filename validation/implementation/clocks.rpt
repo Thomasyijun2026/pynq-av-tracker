@@ -1,0 +1,54 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Tue Nov  3 20:37:06 2026
+| Host         : Thomascomputer running 64-bit major release  (build 9200)
+| Command      : report_clocks -file D:/pynq_av_localizer/build/av_pmod_V7/run_20261103_203039/reports/clocks.rpt
+| Design       : system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Physopt postRoute
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Report
+
+
+Attributes
+  P: Propagated
+  G: Generated
+  A: Auto-derived
+  R: Renamed
+  V: Virtual
+  I: Inverted
+  S: Pin phase-shifted with Latency mode
+
+Clock       Period(ns)  Waveform(ns)     Attributes  Sources
+clk_fpga_0  10.000      {0.000 5.000}    P           {system_i/ps7/inst/PS7_i/FCLKCLK[0]}
+mic_bclk    500.000     {0.000 250.000}  P,G         {mic_bclk}
+
+
+====================================================
+Generated Clocks
+====================================================
+
+Generated Clock     : mic_bclk
+Master Source       : system_i/ps7/inst/PS7_i/FCLKCLK[0]
+Master Clock        : clk_fpga_0
+Divide By           : 50
+Generated Sources   : {mic_bclk}
+
+
+
+====================================================
+User Uncertainty
+====================================================
+
+
+
+====================================================
+User Jitter
+====================================================
+
+Clock       Jitter(ns)
+clk_fpga_0  0.300
+

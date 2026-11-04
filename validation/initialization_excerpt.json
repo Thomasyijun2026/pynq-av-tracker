@@ -1,0 +1,40 @@
+[
+  {
+    "source": "logs/av_servo_coordinates_V1/upgrade_20261104_153751/reboot_requests_20261104_160314/op02_service_result.json",
+    "source_sha256": "a4fcc735ca689bd188092f4f22310857becfe4b23035a2ad50f04faa04e910cb",
+    "fields": [
+      {
+        "pointer": "/status",
+        "value": "RELATIVE_SOURCE_CONFIRMED"
+      },
+      {
+        "pointer": "/calibration_status",
+        "value": "RELATIVE_SINGLE_SOURCE_ALIGNED"
+      },
+      {
+        "pointer": "/elapsed_seconds",
+        "value": 35.88064823000002
+      }
+    ]
+  },
+  {
+    "source": "logs/av_servo_coordinates_V1/upgrade_20261104_153751/reboot_requests_20261104_160314/runtime.json",
+    "source_sha256": "6e15b99b9c945ccd4cf2ef2cb8ce8030d2fb42e90f5a089e37d0b270483cd2d5",
+    "fields": {
+      "pointer": "/jobs/1",
+      "fields": {
+        "status": "RELATIVE_TARGET_CONFIRMED",
+        "total_seconds": 39.062433763,
+        "cleanup_verified": true,
+        "full_chain_verified": false,
+        "initialization_evidence_check": {
+          "status": "FULL_TURN_STATIC_AXIS_HANDOFF_CHECKED",
+          "same_boot": true,
+          "current_trigger": true,
+          "physical_accuracy_verified": false,
+          "overlap_basis": "AUDIO_TRANSACTION_AND_MOTION_ENVELOPES_NOT_SAMPLE_EXPOSURE_SYNC"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "updated_pc": "2026-11-03T00:15:04.351374+08:00",
+  "status": "USER_REPORTED_SOUND_STOP_PENDING_CONNECTION",
+  "connector": "PMODA",
+  "reported_previous": {
+    "10": "VCC",
+    "11": "IO",
+    "12": "GND"
+  },
+  "current_module_to_physical": null,
+  "signal_fpga": "W19",
+  "pmod_index": 7,
+  "supply_volts": 3.3,
+  "basis": "Official pinned PYNQ pin table plus user module labels and user reply 改好了",
+  "module_exact_model": "HUAQIFEI BEEP V3.0 (rear silkscreen)",
+  "audible_sound_verified": true,
+  "previous_assumed_module_to_physical": {
+    "VCC": 12,
+    "IO": 10,
+    "GND": 11
+  },
+  "expected_module_to_official_physical": {
+    "VCC": 12,
+    "IO": 10,
+    "GND": 11
+  },
+  "latest_user_reported_physical": {
+    "10": "GND",
+    "11": "IO"
+  },
+  "official_pmoda_physical": {
+    "10": "IO W19",
+    "11": "GND",
+    "12": "3V3"
+  },
+  "official_source": "https://dpoauwgwqsy2x.cloudfront.net/Download/PYNQ_Z2_User_Manual_v1.1.pdf#page=24",
+  "verification": "User explicitly reports VCC12/IO11/GND10. Official physical11 is hardwired GND; existing driver controls physical10/W19. Physical continuity not measured. No repeated photo/position question required.",
+  "hardware_drive_allowed": false,
+  "user_reported_module_to_number": {
+    "VCC": 12,
+    "IO": 11,
+    "GND": 10
+  },
+  "user_keep_original": true,
+  "swap_instruction_cancelled": true,
+  "photo_evidence": "logs\\buzzer_pmoda_V2\\network_recheck_20261102_232859\\user_buzzer_rear_V1.jpg",
+  "pin_audit": "logs/buzzer_pmoda_V2/pin_function_audit_20261102_234850",
+  "next_action": "Silence only; do not repeat buzzer test",
+  "user_connector_constraint": "PMOD_DIRECT_PLUG_NO_JUMPER_OR_ADAPTER",
+  "selected_adjacent_physical_pins": [
+    10,
+    11,
+    12
+  ],
+  "proposed_module_to_physical": {
+    "VCC": 12,
+    "IO": 10,
+    "GND": 11
+  },
+  "proposed_connection": "Previous three-core adapter suggestion rejected by user",
+  "physical_rewire_confirmed": false,
+  "user_reported_sound_success": true,
+  "audible_verification_basis": "User said 好了成功; no instrument measurement",
+  "silence_verified": false,
+  "desired_idle_state": "SILENT",
+  "continuous_beep_allowed": false,
+  "desired_prompt_mode": "SINGLE_SHORT_PULSE_RETURN_SILENT_NOT_YET_IMPLEMENTED"
+}

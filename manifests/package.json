@@ -15,8 +15,8 @@
       "sha256": "b4d08042fd53f785fe40f0cba0948f6266755984e024f3a91e8dc37513ceadc5"
     },
     "README.md": {
-      "bytes": 4363,
-      "sha256": "e397d80945901b928403136475c000ef639c3118da6c92f69db5703c940773c8"
+      "bytes": 5245,
+      "sha256": "52defb3e748c8fbc60cc3e9191e7af9d0008490bcdef57812d407c7bfa87f029"
     },
     "requirements.txt": {
       "bytes": 198,
@@ -43,8 +43,8 @@
       "sha256": "826710834e446e5fa81b26f9f7930364eff9c0577568107309657f3fbfa36eac"
     },
     "docs/submission.md": {
-      "bytes": 2653,
-      "sha256": "73d1ce017eb1a9fb6c1b83e7e31cf9c48eb5ed1d85276cdc1437c5fe83074df2"
+      "bytes": 2711,
+      "sha256": "54a290de4d3d48a423c1bb9638d2423887572941ca8822531241bc7049105b22"
     },
     "docs/third_party.md": {
       "bytes": 1088,
@@ -919,8 +919,8 @@
       "sha256": "13365712d7e400deaa56e95edf214e81dd6b8eb38147cd77a894c793bb18fc5d"
     },
     "docs/demo_recording.md": {
-      "bytes": 1404,
-      "sha256": "d03976aaa1ab592215f64af132e6feaf31e5abd3695a98b599026462c62cc3af"
+      "bytes": 1232,
+      "sha256": "8418cbafc54159e45c51afdcc113edfab957ad9aa98f0badda9479cecc34927d"
     },
     "docs/performance.md": {
       "bytes": 2327,
@@ -953,6 +953,10 @@
     "validation/materials/request_statistics.json": {
       "bytes": 32710,
       "sha256": "091d92046b34d0f83d88d33f6768990e749328ab3a5ef7dd0d63a946fb00ca34"
+    },
+    "docs/submitted_materials.md": {
+      "bytes": 1927,
+      "sha256": "e68fc6c98b6bad37c87d1d4fa548d7ddf4f674ca33c0ea9a2cb3b0105ad2d84a"
     }
   }
 }

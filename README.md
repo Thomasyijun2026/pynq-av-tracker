@@ -21,16 +21,19 @@ python -B tools/materialize.py --output D:/pynq_reproduction_v1
 
 仓库使用小写分发路径；`materialize.py` 根据清单恢复原来区分大小写的模块名和 Tcl 路径。该步骤只写入新的空目录，不连接板子。`README.md`、`LICENSE` 和 `SKILL.md` 保留工具约定名称。
 
-## 目录
+## AMD 推荐目录对照
 
-| 目录 | 内容 |
-|---|---|
-| [source](source/) | 原版本 PS Python、桌面 HTML/JS、RTL、XDC、Tcl、仿真测试、预生成 bit/HWH/XSA、整数参考输入 |
-| [docs](docs/) | 结构、算法、硬件、从零复现、验证边界、官方交付对应关系 |
-| [skills](skills/README.md) | 可复用工程技能、执行步骤、失败处理和已验证案例 |
-| [validation](validation/) | 实现报告、音频数字比对、初始化结果节选、发布检查 |
-| [manifests](manifests/) | 源码路径映射、逐文件大小和 SHA256 |
-| [tools](tools/) | 只读校验、目录恢复、安装配置生成、桌面适配入口 |
+| 指南目录 | 本仓库入口 | 内容 |
+|---|---|---|
+| `src/` | [FPGA RTL、XDC 与工程脚本](source/fpga/)、[PYNQ 板端软件](source/software/pynq/)、[桌面端](source/desktop/) | PL、PS 与桌面源码 |
+| `sim/` | [RTL 自检](source/fpga/audio_localize_v6/sim/)、[软件与整数参考测试](source/scripts/)、[验证说明](docs/validation.md) | 仿真、软件回归与结果 |
+| `build/` | [复现入口](source/reproduce.py)、[Vivado Tcl](source/fpga/av_pmod_v7/tcl/)、[实现报告](validation/implementation/) | 构建、资源与时序 |
+| `board/` | [硬件连接](docs/hardware.md)、[ABI5 上板文件](source/hardware/abi5/)、[安装与运行](docs/reproduce.md)、[历史初始化结果](validation/initialization_excerpt.json) | 上板工程、运行步骤和实测输出 |
+| `data/` | [参考 PCM 与测试音](source/logs/av_standalone_v1/session_20261103_003121/)、[整数比对结果](validation/audio_reference.json)、[报告数据](validation/materials/) | 输入数据、参考结果和来源 |
+| `skill/` | [技能包](skill/README.md) | 适用范围、使用方法、失败条件和验证案例 |
+| `report/` | [技术报告 PDF](report/main.pdf)、[大模型协作记录](docs/ai_collaboration.md) | 设计报告、提示词、模型回答和纠错过程 |
+
+[逐文件清单](manifests/) 记录冻结源码与发布文件的 SHA-256。[复现工具](tools/) 提供校验、目录恢复和板端配置生成。[架构与接口](docs/architecture.md) 说明 PL、PS 和桌面的分工。技术报告保留冻结稿原文，其中的 `skills/` 对应当前的 [`skill/`](skill/README.md)。
 
 ## 已有验证
 

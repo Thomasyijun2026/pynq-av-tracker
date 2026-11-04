@@ -1,0 +1,112 @@
+{
+  "scope": "SAVED_EVIDENCE_NO_NEW_BOARD_ACTIONS",
+  "phase_component": {
+    "pairs": [
+      {
+        "input_label": "background_fresh",
+        "repeat": 0,
+        "baseline_seconds": 1.3814408899997943,
+        "cached_seconds": 1.2383947480011557,
+        "exact_result_equal": true,
+        "result_sha256": "0039ff2991f6e8d28c3746e53ff9fa9f18338bbcae9897d4b5114d9dee3ee40c"
+      },
+      {
+        "input_label": "speech_1",
+        "repeat": 0,
+        "baseline_seconds": 1.35775583099894,
+        "cached_seconds": 1.2981746570003452,
+        "exact_result_equal": true,
+        "result_sha256": "62736a3c0aef757fd49e066de2f637e974e06dd36a678c731bbeb9f8751732f8"
+      },
+      {
+        "input_label": "speech_2",
+        "repeat": 0,
+        "baseline_seconds": 1.3362311359996966,
+        "cached_seconds": 1.2150060040003154,
+        "exact_result_equal": true,
+        "result_sha256": "376b51ebbde1cb033fd51953c81c336f8073f61e55e60c6b454b0461c799ca91"
+      },
+      {
+        "input_label": "background_fresh",
+        "repeat": 1,
+        "baseline_seconds": 1.3559035369980847,
+        "cached_seconds": 1.2407790440011013,
+        "exact_result_equal": true,
+        "result_sha256": "0039ff2991f6e8d28c3746e53ff9fa9f18338bbcae9897d4b5114d9dee3ee40c"
+      },
+      {
+        "input_label": "speech_1",
+        "repeat": 1,
+        "baseline_seconds": 1.3518662380010937,
+        "cached_seconds": 1.1808201710009598,
+        "exact_result_equal": true,
+        "result_sha256": "62736a3c0aef757fd49e066de2f637e974e06dd36a678c731bbeb9f8751732f8"
+      },
+      {
+        "input_label": "speech_2",
+        "repeat": 1,
+        "baseline_seconds": 1.3282159119989956,
+        "cached_seconds": 1.1915143859987438,
+        "exact_result_equal": true,
+        "result_sha256": "376b51ebbde1cb033fd51953c81c336f8073f61e55e60c6b454b0461c799ca91"
+      }
+    ],
+    "baseline_mean_seconds": 1.3519022573327675,
+    "cached_mean_seconds": 1.2274481683337701,
+    "mean_reduction_percent": 9.20584963328183,
+    "all_exact_equal": true,
+    "not_end_to_end_or_pl_vs_cpu_speedup": true
+  },
+  "implementation": {
+    "clock_mhz": 100,
+    "setup_slack_ns": 0.287,
+    "hold_slack_ns": 0.035,
+    "lut": 14822,
+    "lut_available": 53200,
+    "ff": 11930,
+    "ff_available": 106400,
+    "bram": 1.5,
+    "bram_available": 140,
+    "dsp": 2,
+    "dsp_available": 220
+  },
+  "initialization": {
+    "total_seconds": 39.062433763,
+    "stages": [
+      {
+        "label": "设备准备",
+        "seconds": 2.3053906979999965
+      },
+      {
+        "label": "扫描采集与声音分析",
+        "seconds": 8.637656910000032
+      },
+      {
+        "label": "完成视觉搜索与静止测轴",
+        "seconds": 15.547145152999974
+      },
+      {
+        "label": "静止声学参考分析",
+        "seconds": 5.97678548600004
+      },
+      {
+        "label": "完成与清理",
+        "seconds": 2.2873934919999783
+      },
+      {
+        "label": "结果持久化",
+        "seconds": 1.1262670140000068
+      },
+      {
+        "label": "外层加载与回执开销",
+        "seconds": 3.1817950099999734
+      }
+    ],
+    "stage_labels_describe_milestones_not_exclusive_thread_cpu": true
+  },
+  "failed_implementation": {
+    "setup_slack_ns": -0.663,
+    "tns_ns": -489.416,
+    "setup_failing_endpoints": 2017
+  }
+}

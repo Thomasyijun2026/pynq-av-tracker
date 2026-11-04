@@ -1,0 +1,80 @@
+{
+  "note": "Original records are retained in the engineering workspace. Public projections include selected fields only; each projection is identified separately from its original source digest.",
+  "sources": [
+    {
+      "id": "S1",
+      "original_path": "logs/av_servo_coordinates_V1/upgrade_20261104_153751/checkpoint_20261104_154731/runtime.json",
+      "sha256": "638518a5f2e7fe21f623d4c6989c06f7d69ec5eded8b571e96a620db48d49994"
+    },
+    {
+      "id": "S2",
+      "original_path": "logs/av_servo_coordinates_V1/upgrade_20261104_153751/connection_20261104_155712/runtime.json",
+      "sha256": "66154b71bf46bce1160d4515d461cf3313c2cdab3d50640e319c2e2fc7e3c62c"
+    },
+    {
+      "id": "S3",
+      "original_path": "logs/av_servo_coordinates_V1/upgrade_20261104_153751/final_v2_20261104_160209/runtime.json",
+      "sha256": "6e15b99b9c945ccd4cf2ef2cb8ce8030d2fb42e90f5a089e37d0b270483cd2d5"
+    },
+    {
+      "id": "S4",
+      "original_path": "logs/av_servo_coordinates_V1/upgrade_20261104_153751/final_v2_20261104_160411/runtime.json",
+      "sha256": "c7bb2355f46af26891eb53341a33bb81e03d04e29d284f79d105897408775e2f"
+    },
+    {
+      "id": "S5",
+      "original_path": "logs/av_servo_coordinates_V1/upgrade_20261104_153751/readback_20261104_154423/runtime.json",
+      "sha256": "ae3a5b37122d4530651eb29e30e0c7ec4a6bf2f7cb2df22aba77d2f1c90f20fc"
+    },
+    {
+      "id": "S6",
+      "original_path": "logs/av_servo_coordinates_V1/upgrade_20261104_153751/reboot_requests_20261104_160314/runtime.json",
+      "sha256": "6e15b99b9c945ccd4cf2ef2cb8ce8030d2fb42e90f5a089e37d0b270483cd2d5"
+    },
+    {
+      "id": "S7",
+      "original_path": "logs/av_servo_coordinates_V1/upgrade_20261104_153751/user_requests_20261104_154841/runtime.json",
+      "sha256": "5bf3f998d11104066c5da1e748bfc3fd63404d28c347f896430114000254bccd"
+    },
+    {
+      "id": "S8",
+      "original_path": "logs/av_servo_error_V1/check_20261104_162955/runtime.json",
+      "sha256": "7bffca860943d6e9cfc9bea20c5b9749b8afc911fbcf8235b8a281dd2c24b9ca"
+    },
+    {
+      "id": "P1",
+      "original_path": "logs/av_standalone_V1/session_20261103_003121/phase_cache_profile_v2_20261104_005420/result.json",
+      "sha256": "4207dce6bda341271c7249a954185dc771d7f6f8cd2d1959b0562add5864d59f"
+    },
+    {
+      "id": "P2",
+      "original_path": "logs/av_pmod_V7/build_20261103_203039/review.json",
+      "sha256": "75212bee03ea33297a05ff41524cc5fef65b5acaeee5ad0761d22c4148a866ee"
+    },
+    {
+      "id": "P3",
+      "original_path": "build/av_pmod_V5/run_20261103_193036/mic_debug.runs/impl_1/system_wrapper_timing_summary_postroute_physopted.rpt",
+      "sha256": "105765a70e8c5459d303b4808105f57a3615d0212588a96371242a04e48a8311"
+    },
+    {
+      "id": "I1",
+      "original_path": "logs/av_servo_coordinates_V1/upgrade_20261104_153751/reboot_requests_20261104_160314/op02_service_result.json",
+      "sha256": "a4fcc735ca689bd188092f4f22310857becfe4b23035a2ad50f04faa04e910cb"
+    },
+    {
+      "id": "T1",
+      "original_path": "logs/github_delivery_v1/reproduction_v1/logs/audio_filter_V7/rtl_vectors_20261104_170756/result.json",
+      "sha256": "177efd09c521b9ec58cdab6082d82d0a54cccc6aa7554e09974b6cc7935536ce"
+    },
+    {
+      "id": "T2",
+      "original_path": "logs/github_delivery_v1/reproduction_v1/logs/av_phase_runtime_V13/offline_20261104_170758/result.json",
+      "sha256": "95bbd77ab3a3ca6b7d7743ad3beeff2a7cb9c1e7c1dddade2d28fe7637026fa0"
+    },
+    {
+      "id": "G1",
+      "original_path": "logs/av_overnight_V1/github_publish_20261104_171202_444.console.log",
+      "sha256": "bf130925701c8803fe4561d24805acaee28ee13ddcc380e4b6c4a3c5e7ee6e57"
+    }
+  ]
+}

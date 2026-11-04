@@ -1,0 +1,28 @@
+{
+  "description": "Engineering artifacts from actual collaboration, not reconstructed assistant dialogue.",
+  "cases": [
+    {
+      "id": "fir_pipeline",
+      "source": "source/fpga/audio_localize_v6/rtl/doa_correlator.sv",
+      "sha256": "59670633e4e1262a40a411ac53a273b9cd39b8fb90da6cd431bc311c074c119e",
+      "first_line": 129,
+      "last_line": 151,
+      "literal_excerpt": "            fir_valid_0<=0;\n            fir_valid_1<=fir_valid_0 && active;\n            if(fir_valid_0 && active) begin\n                for(c=0;c<4;c=c+1) for(d=0;d<2;d=d+1)\n                    half_stage[c][d]<=$signed({quad_stage[c][2*d][21],quad_stage[c][2*d]})\n                        +$signed({quad_stage[c][2*d+1][21],quad_stage[c][2*d+1]});\n            end\n            if(sample_valid && active) begin\n                if(state!=IDLE || fir_valid_0 || fir_valid_1) overrun<=1;\n                if(skipped<SKIP_FRAMES) skipped<=skipped+1;\n                else begin\n                    fir_valid_0<=1;\n                    for(c=0;c<4;c=c+1) begin\n                        for(d=0;d<4;d=d+1) quad_stage[c][d]<=quad_sum[c][d];\n                        for(d=14;d>0;d=d-1) previous[c][d]<=previous[c][d-1];\n                        previous[c][0]<=input_word[c];\n                    end\n                end\n            end\n            if(fir_valid_1 && active) begin\n                for(c=0;c<4;c=c+1) history[c][wr_ptr]<=filtered[c];\n                wr_ptr<=wr_ptr+1'b1;\n                history_samples<=history_samples+1;",
+      "failed_timing_source": "P3",
+      "accepted_implementation_source": "P2"
+    },
+    {
+      "id": "full_sweep",
+      "source": "I1",
+      "status": "RELATIVE_SOURCE_CONFIRMED",
+      "full_sweep_this_trigger": true,
+      "fresh_static_views": 3,
+      "physical_angular_accuracy": "NOT_VALIDATED"
+    },
+    {
+      "id": "archive_bytes",
+      "source": "G1",
+      "literal_error": "    assert blob == sha, 'Git content differs from frozen bytes: ' + path"
+    }
+  ]
+}
